@@ -31,11 +31,11 @@ function Gasto({gasto}) {
     const { nombre, cantidad, categoria, id, fecha } = gasto
 
     const leadingActions = () => {
-        
+        console.log('Editar...')
     }
 
     const trailingActions = () => {
-
+        console.log('Eliminar...')
     }
 
     return (
