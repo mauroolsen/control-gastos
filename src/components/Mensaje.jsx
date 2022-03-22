@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Mensaje({children, tipo}) {
   return (
