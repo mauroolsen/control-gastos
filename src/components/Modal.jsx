@@ -75,7 +75,7 @@ function Modal({setModal, animarModal, setAnimarModal, guardarGasto}) {
                     <option value="varios">Varios</option>
                     <option value="ocio">Ocio</option>
                     <option value="salud">Salud</option>
-                    <option value="Suscripciones">Suscripciones</option>
+                    <option value="suscripciones">Suscripciones</option>
                 </select>
             </div>
 
