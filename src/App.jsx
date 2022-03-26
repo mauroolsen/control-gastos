@@ -32,6 +32,11 @@ function App() {
     }, 300)
   }
 
+  const eliminarGasto = id => {
+    const gastosActualizados = gastos.filter( gasto => gasto.id !== id)
+    setGastos(gastosActualizados)
+  }
+
   const guardarGasto = gasto => {
     if(gasto.id) {
       const gastosActualizados = gastos.map( gastoState => (gastoState.id === gasto.id ? gasto : gastoState))
@@ -63,6 +68,7 @@ function App() {
             <ListadoGastos 
             gastos={gastos}
             setGastoEditar={setGastoEditar}
+            eliminarGasto={eliminarGasto}
             />
           </main>
           <div className="nuevo-gasto">
